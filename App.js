@@ -1,6 +1,8 @@
-import express from 'express';
-import Hello from './Hello.js';
+import express from "express";
+import Hello from "./Hello.js";
+import Lab5 from "./Lab5.js";
 
-const app = express()
-Hello(app)
-app.listen(4000)
+const app = express();
+Hello(app);
+Lab5(app);
+app.listen(4000);
