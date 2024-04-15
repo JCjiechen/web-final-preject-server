@@ -25,7 +25,6 @@ export default function UserRoutes(app) {
 
   const findUserById = async (req, res) => {
     const id = req.params.userId;
-    console.log(req.params);
     const user = await dao.findUserById(id);
     if (user) {
       res.json(user);
