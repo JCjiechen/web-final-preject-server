@@ -1,6 +1,6 @@
 import model from "./model.js";
 
-export const createCourse= (course) => {
+export const createCourse = (course) => {
   delete course._id;
   return model.create(course);
 };
@@ -12,7 +12,7 @@ export const findCourseById = (courseId) => model.findById(courseId);
 export const findCourseByCoursename = (coursename) =>
   model.findOne({ name: coursename });
 
-export const updateCourse= (courseId, course) =>
+export const updateCourse = (courseId, course) =>
   model.updateOne({ _id: courseId }, { $set: course });
 
 export const deleteCourse = (courseId) => model.deleteOne({ _id: courseId });
