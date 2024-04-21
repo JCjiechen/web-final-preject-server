@@ -9,6 +9,7 @@ const quizSchema = new mongoose.Schema(
     type: String,
     group: String,
     time: Number,
+    isTimeLimit: Boolean,
     attemptTimes: Number,
     questions: Number,
     availableDate: Date,
